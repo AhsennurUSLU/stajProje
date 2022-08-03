@@ -38,10 +38,10 @@
 <?php 
 
 
-include_once('data/header.php');
-include_once('data/menu.php');
-include_once('include/home.php');
-include_once('data/footer.php');
+include('data/header.php');
+include('data/menu.php');
+include('include/home.php');
+include('data/footer.php');
 
 ?>
   

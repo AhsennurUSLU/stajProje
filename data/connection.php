@@ -6,8 +6,14 @@ $password = "";
 $vt = "admin_login";
 
 
-
-$db = new mysqli($server, $username, $password, $vt);     
+try
+{
+    $db = new PDO("mysql:host=$server;dbname=$vt", $username, $password);
+}
+catch(PDOException $e)
+{
+    echo $e -> getMessage();
+}     
 
 
 

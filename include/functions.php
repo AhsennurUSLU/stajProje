@@ -16,7 +16,7 @@ if(isset($_POST['login_btn'])){
 
 	$sql="SELECT *,count(*) FROM `admin_tablo` WHERE `mail`='$user' AND `password`='$password' AND  `is_active`=1";
 	$result=$db -> query($sql);
-	$row=$result->fetch_assoc();
+	$row=$result->fetch(PDO::FETCH_ASSOC);
 
 	if($row['count(*)']>0){
 	
@@ -29,16 +29,38 @@ if(isset($_POST['login_btn'])){
 	{
 
 		session_destroy();
-		header('Location: admin_login.php');
+		header('Location: admin_login1.php');
 	}
 
 
 }
+else if (isset($_POST['btn'])){
+
+	$name = $_POST['name'] ; 
+	$surname = $_POST['surname'] ; 
+	$email = $_POST['email'] ; 
+	$password = $_POST['password'] ; 
+	if ($name != null && $surname != null && $email != null && $password != null ) {
+		$sql = "INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`) VALUES('$name', '$surname', '$email', '$password')";
+        $db -> query($sql);
+		header('location: /register.php');
+	}
+	}
+
+
+
+
+
 else
 {
 	session_destroy();
-	header('Location: admin_login.php');
+	header('Location: admin_login1.php');
 }
+
+
+
+
+
 
 
 

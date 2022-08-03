@@ -30,7 +30,7 @@
               <div class="inner">
                 <h3>150</h3>
 
-                <p>New Orders</p>
+                <p>Yeni Siparişler</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -45,7 +45,7 @@
               <div class="inner">
                 <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                <p>Bounce Rate</p>
+                <p>Çıkma Oranı</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -60,7 +60,7 @@
               <div class="inner">
                 <h3>44</h3>
 
-                <p>kullanıcı Kayıtları</p>
+                <p>Kullanıcı Kayıtları</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -95,7 +95,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="fas fa-chart-pie mr-1"></i>
-                  Sales
+                  Grafik
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
@@ -126,7 +126,7 @@
             <!-- DIRECT CHAT -->
             <div class="card direct-chat direct-chat-primary">
               <div class="card-header">
-                <h3 class="card-title">Direct Chat</h3>
+                <h3 class="card-title">Direkt Mesaj</h3>
 
                 <div class="card-tools">
                   <span title="3 New Messages" class="badge badge-primary">3</span>
@@ -254,7 +254,7 @@
                             Nadia Jolie
                             <small class="contacts-list-date float-right">2/20/2015</small>
                           </span>
-                          <span class="contacts-list-msg">I'll call you back at...</span>
+                          <span class="contacts-list-msg">Seni tekrar arayacağım...</span>
                         </div>
                         <!-- /.contacts-list-info -->
                       </a>
@@ -284,7 +284,7 @@
                             John K.
                             <small class="contacts-list-date float-right">1/27/2015</small>
                           </span>
-                          <span class="contacts-list-msg">Can I take a look at...</span>
+                          <span class="contacts-list-msg">Bir bakabilir miyim...</span>
                         </div>
                         <!-- /.contacts-list-info -->
                       </a>
@@ -299,7 +299,7 @@
                             Kenneth M.
                             <small class="contacts-list-date float-right">1/4/2015</small>
                           </span>
-                          <span class="contacts-list-msg">Never mind I found...</span>
+                          <span class="contacts-list-msg">Kusura bakmayın buldum...</span>
                         </div>
                         <!-- /.contacts-list-info -->
                       </a>
@@ -465,7 +465,7 @@
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-map-marker-alt mr-1"></i>
-                  Visitors
+                  Ziyaretçi
                 </h3>
                 <!-- card tools -->
                 <div class="card-tools">
@@ -510,7 +510,7 @@
               <div class="card-header border-0">
                 <h3 class="card-title">
                   <i class="fas fa-th mr-1"></i>
-                  Sales Graph
+                  Kullanıcı Aktifliği Grafiği
                 </h3>
 
                 <div class="card-tools">
@@ -562,7 +562,7 @@
 
                 <h3 class="card-title">
                   <i class="far fa-calendar-alt"></i>
-                  Calendar
+                  Takvim
                 </h3>
                 <!-- tools card -->
                 <div class="card-tools">
