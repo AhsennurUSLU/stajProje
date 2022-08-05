@@ -240,15 +240,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
+                <a href="/editors.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                  <p>İçerik Oluştur</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="/contentlist.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Doğrulama</p>
+                  <p>İçerik Listesi</p>
                 </a>
               </li>
             </ul>

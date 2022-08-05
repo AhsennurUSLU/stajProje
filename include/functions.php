@@ -46,24 +46,60 @@ else if (isset($_POST['btn'])){
 		header('location: /register.php');
 	}
 	}
+// içerik düzenle/sil işlemleri
+else if (isset($_POST['content-update'])){
 
+		 $id = $_POST['id'] ; 
+		 $title = $_POST['title'] ; 
+		 $content = $_POST['content'] ;
+		if ($title != null && $content != null) {
+			echo $sql = "UPDATE `contents` SET `title`='$title' , `content`= '$content' WHERE `id`='$id'";
+			$db -> query($sql);
+			header('location: /contentlist.php');
+		}
+		}
 
+else if (isset($_POST['content_sil'])){
 
+	$id = $_POST['id'] ;
+	if ($id != null  ) {
+		$sql = "UPDATE `contents` SET `is_active`= 0 WHERE `id`='$id'";
+		$db -> query($sql);
+		header('location: /contentlist.php');
+	} 
+	
+}
+// kişileri düzenle/sil işlemleri
+else if (isset($_POST['user_update'])){
 
+	$id = $_POST['id']; 
+	$name = $_POST['first_name'] ; 
+	$surname = $_POST['last_name'] ;
+	$email = $_POST['email'] ; 
+	$password = $_POST['password'] ;
+    if ($name != null && $surname != null && $email != null && $password != null) {
+	   $sql = $db->exec("UPDATE `users` SET `first_name` = '$name', `last_name` = '$surname', `email`= '$email', `password`= '$password' WHERE `id` = '$id'");
+	   $db -> prepare($sql);
+	   header('location: /users_list.php');
+    }
+}
+
+else if (isset($_POST['user_sil'])){
+
+	$id = $_POST['id'] ;
+	if ($id != null ) {
+   		$sql = "UPDATE `users` SET `is_active`= 0 WHERE `id`='$id'";
+   		$db -> query($sql);
+   		header('location: /users_list.php');
+	} 
+
+}
 
 else
 {
 	session_destroy();
 	header('Location: admin_login1.php');
 }
-
-
-
-
-
-
-
-
 
 
 ?>
