@@ -1,7 +1,7 @@
-  <!-- Main Sidebar Container -->
+<!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="/index.php" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
@@ -14,14 +14,14 @@
           <img src="dist/img/avatar.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Ahsennur Uslu</a>
+          <a href="/index.php" class="d-block">Ahsennur Uslu</a>
         </div>
       </div>
 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Ara" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-sidebar">
               <i class="fas fa-search fa-fw"></i>
@@ -36,7 +36,7 @@
           <!--  .nav-icon class  sınıfını kullanarak bağlantılara ikon ekleme kısmı
                 font-awesome ile veya başka bir  -->
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="/index.php" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Gösterge Paneli
@@ -47,17 +47,17 @@
           </li>
 
 
-          <!--
+          
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/blog/index.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Etiketler
-                <span class="right badge badge-danger">Yeni</span>
+                Site Ana Sayfası
+                <span class="right badge badge-danger"></span>
               </p>
             </a>
           </li>
--->
+
           <!--
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -222,32 +222,32 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                Formlar
+                Kullanıcı/İçerik
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/register.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-user-plus nav-icon"></i>
                   <p>Kullanıcı Oluştur</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/users_list.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-users nav-icon"></i>
                   <p>Kullanıcı Listesi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/editors.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="/create_content.php" class="nav-link">
+                  <i class="fas fa-file nav-icon"></i>
                   <p>İçerik Oluştur</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/contentlist.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-list nav-icon"></i>
                   <p>İçerik Listesi</p>
                 </a>
               </li>
@@ -257,17 +257,18 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tablolar
+                Araçlar
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
+              <!--
               <li class="nav-item">
                 <a href="pages/tables/simple.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Simple Tables</p>
                 </a>
-              </li>
+              </li>-->
 
 <!--
               <li class="nav-item">
@@ -288,40 +289,50 @@
 -->
           <li class="nav-header">Örnekler</li>
           <li class="nav-item">
-            <a href="menu/takvim.php" class="nav-link">
+            <a href="/takvim.php" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Takvim
-                <span class="badge badge-info right">2</span>
+                <span class="badge badge-info right"></span>
               </p>
             </a>
           </li>
 
 
-          <!--
+          
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="/mailbox.php" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
-                Gallery
+                Mail Kutusu
               </p>
             </a>
           </li>
--->
 
-<!--
+
+
           <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
+            <a href="/mail_olustur.php" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
-                Kanban Board
+                Mail Oluştur
               </p>
             </a>
           </li>
 
--->
+
+          <li class="nav-item">
+            <a href="/ayarlar.php" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Ayarlar
+              </p>
+            </a>
+          </li>
 
 
+
+<!--
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
@@ -422,7 +433,7 @@
               </li>
             </ul>
           </li>
-
+-->
 
 
           <!--
@@ -556,6 +567,7 @@
             </ul>
           </li>
 -->
+<!--
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-search"></i>
@@ -579,7 +591,7 @@
               </li>
             </ul>
           </li>
-
+-->
 
           <!--
           <li class="nav-header">MISCELLANEOUS</li>

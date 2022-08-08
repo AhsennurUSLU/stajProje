@@ -134,7 +134,7 @@ $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
+<?php include('data/footer.php'); ?>
 
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -208,7 +208,7 @@ $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
 </script>
 <!-- Page specific script -->
 
-<?php include('data/footer.php'); ?>
+
 </body>
 
 </html>

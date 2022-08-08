@@ -58,34 +58,35 @@ if(isset($_SESSION['login'])){
 						Admin
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+					<div class="wrap-input100 validate-input" data-validate = " Lütfen Mail Adresinizi Girin">
 						<input class="input100" type="text" name="user" placeholder="Kullanıcı Adı">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
+					<div class="wrap-input100 validate-input" data-validate="Lütfen Parolanızı Girin">
 						<input class="input100" type="password" name="password" placeholder="Parola">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
-
+<!--
 					<div class="contact100-form-checkbox">
 						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 						<label class="label-checkbox100" for="ckb1">
 							Beni Hatırla
 						</label>
 					</div>
-
+-->
 					<div class="container-login100-form-btn">
 						<button type="submit" class="btn" name="login_btn">
 							Giriş Yap
 						</button>
 					</div>
-
+<!--
 					<div class="text-center p-t-90">
 						<a class="txt1" href="#">
 							Şifremi Unuttum?
 						</a>
 					</div>
+-->
 				</form>
 			</div>
 		</div>

@@ -1,31 +1,18 @@
-<?php  include('../data/header.php');?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin Panel | Takvim</title>
+<?php 
+include('data/header.php');
+include('data/menu.php');
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+?>
+<head>
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- fullCalendar -->
   <link rel="stylesheet" href="../plugins/fullcalendar/main.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-
- 
 </head>
-
-
-<?php 
-  include('../data/menu.php');
-  
-  ?>
-
-
-
 
 
 
@@ -57,20 +44,20 @@
             <div class="sticky-top mb-3">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title">Sürükle/Bırak</h4>
+                  <h4 class="card-title">Sürüklenebilir Ögeler</h4>
                 </div>
                 <div class="card-body">
                   <!-- the events -->
                   <div id="external-events">
                     <div class="external-event bg-success">Öğle Yemeği</div>
-                    <div class="external-event bg-warning">Eve Git</div>
-                    <div class="external-event bg-info">Kod Yaz</div>
+                    <div class="external-event bg-warning">Staj</div>
+                    <div class="external-event bg-info">Eve Dönüş :)</div>
                     <div class="external-event bg-primary">Kod Yaz</div>
-                    <div class="external-event bg-danger">Uyku Vakti</div>
+                    <div class="external-event bg-danger">Toplantı</div>
                     <div class="checkbox">
                       <label for="drop-remove">
                         <input type="checkbox" id="drop-remove">
-                        Bıraktıktan sonra sil
+                        Taşıdıktan Sonra Sil
                       </label>
                     </div>
                   </div>
@@ -80,7 +67,7 @@
               <!-- /.card -->
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Etkinlik Oluştur</h3>
+                  <h3 class="card-title">Etkinlik Oluştur +</h3>
                 </div>
                 <div class="card-body">
                   <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
@@ -94,7 +81,7 @@
                   </div>
                   <!-- /btn-group -->
                   <div class="input-group">
-                    <input id="new-event" type="text" class="form-control" placeholder="Etkinlik Adı">
+                    <input id="new-event" type="text" class="form-control" placeholder="Başlık">
 
                     <div class="input-group-append">
                       <button id="add-new-event" type="button" class="btn btn-primary">Ekle</button>
@@ -125,16 +112,21 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-  
+  <?php include('data/footer.php');?>
+ 
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
+    
   </aside>
   <!-- /.control-sidebar -->
+
 </div>
 <!-- ./wrapper -->
+
+
+
 
 <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
@@ -219,14 +211,14 @@
       //Random default events
       events: [
         {
-          title          : 'Tüm Günün Aktivitesi',
+          title          : 'All Day Event',
           start          : new Date(y, m, 1),
           backgroundColor: '#f56954', //red
           borderColor    : '#f56954', //red
           allDay         : true
         },
         {
-          title          : 'Uzun Olaylar',
+          title          : 'Long Event',
           start          : new Date(y, m, d - 5),
           end            : new Date(y, m, d - 2),
           backgroundColor: '#f39c12', //yellow
@@ -317,9 +309,5 @@
     })
   })
 </script>
-
-<?php  include('../data/footer.php');?>
-
-
 </body>
 </html>

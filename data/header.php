@@ -1,8 +1,4 @@
 
-
-
-
-
 <?php 
 //include('connection.php');
 session_start();
@@ -53,9 +49,11 @@ if(!isset($_SESSION['login'])){
       <li class="nav-item d-none d-sm-inline-block">
         <a href="index.php" class="nav-link">Anasayfa</a>
       </li>
+<!--
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">İletişim</a>
       </li>
+-->
     </ul>
 
     <!-- sağ navbar bağlantısı -->

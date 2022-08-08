@@ -8,7 +8,7 @@ $kullanicisor = $db->prepare("SELECT * FROM users WHERE is_active=1");
 $kullanicisor->execute();
 
 $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
-//$kullaniciupdate = $db->query("UPDATE users SET `first_name`= '".$_POST['name']."', `last_name` = '".$_POST['surname']."' WHERE `users_id` = 4");
+
 
 
 ?>
@@ -35,7 +35,7 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
 
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Kullanıcı Düzenle/Sil </h3>
+            <h3 class="card-title">Kullanıcı Tablosu </h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -46,6 +46,7 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
                         <th>Soyisim</th>
                         <th>E-mail</th>
                         <th>Parola</th>
+                        <th>Meslek</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -66,6 +67,7 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
                             <td><?php echo $kullanici['last_name'] ?></td>
                             <td><?php echo $kullanici['email'] ?></td>
                             <td><?php echo $kullanici['password'] ?></td>
+                            <td><?php echo $kullanici['users_job'] ?></td>
                             
                             <td>
                             <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal<?php echo $kullanici['id'] ?>" onclick="editorFunc(<?php echo $kullanici['id'] ?>)">Düzenle</button></center>
@@ -110,6 +112,10 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
                 <label for="exampleInputEmail1">Parola :</label>
                 <input type="password" class="form-control" value="<?php echo $kullanici['password']?>" name="password">
             </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Meslek :</label>
+                <input type="text" class="form-control" value="<?php echo $kullanici['users_job']?>" name="users_job">
+            </div>
         </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
@@ -141,7 +147,7 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
 <!-- /.kullanici -->
 </div>
 <!-- /.kullanici-wrapper -->
-
+<?php include('data/footer.php'); ?>
 
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -208,7 +214,7 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
 
 
 </script>
-<?php include('data/footer.php'); ?>
+
 </body>
 
 </html>
