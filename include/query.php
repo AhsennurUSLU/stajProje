@@ -1,5 +1,5 @@
 <?php 
-include('data/connection.php');
+include('include/connection.php');
 
 if ($page=="home"){
     $sql = "SELECT count(*) FROM `users` WHERE `is_active`=1";
@@ -11,6 +11,16 @@ if ($page=="home"){
     $result2=$db -> query($sql2);
     $row2=$result2->fetch(PDO::FETCH_ASSOC);
 }
+if ($page=="content_list"){
+
+    $contentsor = $db->prepare("SELECT * FROM contents WHERE `is_active`=1");
+    $contentsor->execute();
+    
+    $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
+}
+
+
+
 
 
 

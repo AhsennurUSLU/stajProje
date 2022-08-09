@@ -136,6 +136,10 @@ $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
         </div>
         <!-- /.card-body -->
     </div>
+
+
+
+
     <!-- /.card -->
 </div>
 <!-- /.col -->

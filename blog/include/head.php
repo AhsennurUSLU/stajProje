@@ -29,7 +29,9 @@ http://www.templatemo.com/tm-488-classic
         <div class="tm-header">
             <div class="container-fluid">
                 <div class="tm-header-inner">
-                    <a href="#" class="navbar-brand tm-site-name">Staj Bloğu</a>
+                    <a href="index.php" class="navbar-brand tm-site-name"><img src="img//BlogLogo.svg" width="150" height="92 " alt="" /></a>
+                    
+                    
                     
                     <!-- navbar -->
                     <nav class="navbar tm-main-nav ">
@@ -41,20 +43,20 @@ http://www.templatemo.com/tm-488-classic
                         <div class="collapse navbar-toggleable-sm" id="tmNavbar">
                             <ul class="nav navbar-nav">
                                 <li class="nav-item <?php if($sayfa=="home") echo"active"  ?>">
-                                    <a  href="index.php" class="nav-link">Anasayfa</a>
+                                    <a  href="index.php" class="nav-link">Home</a>
                                 </li>
                                 <li class="nav-item <?php if($sayfa=="about") echo"active"  ?>">
-                                    <a href="about.php" class="nav-link">Hakkımızda</a>
+                                    <a href="about.php" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item <?php if($sayfa=="blog") echo"active"  ?>">
                                     <a href="blog.php" class="nav-link">Blog</a>
                                 </li>
                                 <li class="nav-item <?php if($sayfa=="contact") echo"active"  ?>">
-                                    <a href="contact.php" class="nav-link">İletişim</a>
+                                    <a href="contact.php" class="nav-link">Contact</a>
                                 </li>
-                               
+
                                 <li class="nav-item <?php if($sayfa=="user") echo"active"  ?>">
-                                    <a href="user.php" class="nav-link"> <i class="fa-solid fa-user"></i>&nbsp; Üye Girişi </a>
+                                    <a href="user.php" class="nav-link"> <i class="fa-solid fa-user"></i>&nbsp; User </a>
                                 </li>
                             </ul>                        
                         </div>

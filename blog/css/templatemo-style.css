@@ -28,10 +28,7 @@ h2 { font-size: 2.2rem; }
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1390px;
-	overflow-x: hidden;
-	
-	
-
+	overflow: hidden !important;
 }
 
 @media (max-width: 1390px) {
@@ -52,8 +49,12 @@ h2 { font-size: 2.2rem; }
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	height: 100px;
-	
-	
+}
+#forfuturetext{
+	width: auto;
+	height: auto;
+	text-align: center;
+
 }
 
 .tm-site-name {

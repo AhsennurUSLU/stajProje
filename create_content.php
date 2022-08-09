@@ -1,6 +1,7 @@
 <?php 
-include('data/header.php');
-include('data/menu.php');
+
+include('header.php');
+include('menu.php');
 
 ?>
 
@@ -42,6 +43,15 @@ include('data/menu.php');
               <div class="form-group">
                 <label>Başlık</label>
                 <input type="text" name="title" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">Kategori</label>
+                <select id="inputStatus" class="form-control custom-select" name="kategori">
+                  <option selected>Seçiniz</option>
+                  <option>Yazılım</option>
+                  <option>Güncel</option>
+                  <option selected>Teknoloji</option>
+                </select>
               </div>
               <div class="form-group">
                   <label>İçerik</label>

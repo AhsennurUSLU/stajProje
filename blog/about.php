@@ -13,7 +13,7 @@ include("include/head.php");
         <div class="aboutcontainer">
         <div class="row tm-margin-t-mid">
                     <div class="col-xs-12">
-                        <h3 class="tm-gold-text">Hakkımızda</h3>
+                        <h3 class="tm-gold-text">Pellentesque fermentum mauris</h3>
                         <p class="bodytext">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
                         <p class="bodytext">Nulla ultrices nibh ac accumsan lobortis. Nulla facilisi. Praesent velit ante, congue ac dignissim in, vehicula sit amet urna. Fusce in dapibus quam, eget finibus velit. Nullam erat odio, vulputate id est ut, consequat rutrum justo. Vivamus vel leo vel nunc tincidunt mattis. Sed neque diam, semper suscipit dictum a, sodales ac metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.</p>
                     </div>

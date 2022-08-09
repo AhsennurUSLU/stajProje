@@ -1,8 +1,6 @@
 <?php 
 include('data/header.php');
 include('data/menu.php');
-
-
 ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

@@ -1,13 +1,12 @@
 <?php
-include('data/connection.php');
-include('data/header.php');
-include('data/menu.php');
+$page="content_list";
+include('include/query.php');
 
 
-$contentsor = $db->prepare("SELECT * FROM contents WHERE `is_active`=1");
-$contentsor->execute();
+include('header.php');
+include('menu.php');
 
-$content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
+
 
 ?>
 
@@ -42,6 +41,7 @@ $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
                     <tr>
                         <th></th>
                         <th>Başlık</th>
+                        <th>Kategori</th>
                         <th>İçerik</th>
                         <th>Oluşturan</th>
                         <th>Oluşturma Tarihi</th>
@@ -61,6 +61,7 @@ $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
                         <tr>
                             <td></td>
                             <td><?php echo $content['title'] ?></td>
+                            <td><?php echo $content['kategori'] ?></td>
                             <td><?php echo $content['content'] ?></td>
                             <td><?php echo $content['user_id'] ?></td>
                             <td><?php echo $content['created_at'] ?></td>
@@ -94,6 +95,16 @@ $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Başlık</label>
                                                     <input type="text" class="form-control" value="<?php echo $content['title'] ?>" name="title">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Kategori</label>
+                                                    <select id="inputStatus" class="form-control custom-select" name="kategori" value="<?php echo $content['kategori'] ?>">
+                                                    <option selected>Seçiniz</option>
+                                                    <option>Yazılım</option>
+                                                    <option>Güncel</option>
+                                                    <option selected>Teknoloji</option>
+                                                    </select>
+                                                   
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">İçerik</label>

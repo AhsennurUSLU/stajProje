@@ -44,6 +44,22 @@ else if (isset($_POST['btn'])){
 		$sql = "INSERT INTO `users` (`first_name`, `last_name`, `email`, `password`,`users_job`) VALUES('$name', '$surname', '$email', '$password','$job')";
         $db -> query($sql);
 		header('location: /register.php');
+		if ($name=="" && $surname=="" && $email=="" && $password=="" && $job=="")
+	{
+		echo "Lütfen Tüm Alanları Doldurun!";	
+	}
+	   else{
+		echo "Başarılı Şekilde Kaydettiniz.";	
+	   }
+	
+				
+				
+					
+				
+				
+	
+
+		
 	}
 	}
 
@@ -52,10 +68,10 @@ else if (isset($_POST['btn'])){
 else if (isset($_POST['kaydet'])){
 
 	$title = $_POST['title'] ;
+	$kategori = $_POST['kategori'];
 	$content = $_POST['content'] ; 
-	
-	if ($title != null && $content != null) {
-		$sql = $db->prepare("INSERT INTO `contents` (`title`,`content`) VALUES('$title','$content')");
+	if ($title != null && $content != null && $kategori != null) {
+		$sql = $db->prepare("INSERT INTO `contents` (`title`,`kategori`,`content`) VALUES('$title','$kategori','$content')");
         $sql->execute();
 	    $cikti = $sql->fetch(PDO::FETCH_ASSOC);
 	    header('location: /contentlist.php');
@@ -120,41 +136,6 @@ else
 }
 
 
-// mail gönderme fonksiyonu
-
-/*
-function mailgonder(){
-	
-    require "inc/class.phpmailer.php"; // PHPMailer dosyamızı çağırıyoruz  
-    $mail = new PHPMailer();
-    $mail->IsSMTP();
-    $mail->From     = "deneme@mesutd.com"; //Gönderen kısmında yer alacak e-mail adresi  
-    $mail->Sender   = "deneme@mesutd.com";
-    $mail->FromName = "Web Mesaj";
-    $mail->Host     = "mail.mesutd.com"; //SMTP server adresi  
-    $mail->SMTPAuth = true;
-    $mail->Username = "deneme@mesutd.com"; //SMTP kullanıcı adı  
-    $mail->Password = "*****"; //SMTP şifre  
-    $mail->SMTPSecure="";
-    $mail->Port = "587";
-    $mail->CharSet = "utf-8";
-    $mail->WordWrap = 50;
-    $mail->IsHTML(true); //Mailin HTML formatında hazırlanacağını bildiriyoruz.  
-    $mail->Subject  = "Konu";
-
-    $mail->Body = "mesaj";
-    $mail->AltBody = strip_tags("mesaj");
-    $mail->AddAddress("deneme@mesutd.com");
-    return ($mail->Send())?true:false;
-    $mail->ClearAddresses();
-    $mail->ClearAttachments();
-}
-
-if(mailgonder()) echo "başarılı";
-else echo "olmadı";
-
-
-*/
 
 
 

@@ -1,13 +1,17 @@
-
 <?php 
 //include('connection.php');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 session_start();
-
 if(!isset($_SESSION['login'])){
   session_destroy();
-	header('Location: include/admin_login1.php');
+	header('Location: include/login.php');
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +38,21 @@ if(!isset($_SESSION['login'])){
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+
+
+
+
+
+
 
 
 <!-- Navbar(gezinme çubuğu) -->
