@@ -19,6 +19,16 @@ if ($page=="content_list"){
     $content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
 }
 
+if ($page=="user_list"){
+
+    $kullanicisor = $db->prepare("SELECT * FROM users WHERE is_active=1");
+    $kullanicisor->execute();
+
+    $kullanici_listesi = $kullanicisor->fetchALL(PDO::FETCH_ASSOC);
+}
+
+
+
 
 
 

@@ -16,7 +16,7 @@ include('menu.php');
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+              <li class="breadcrumb-item"><a href="/index.php">Anasayfa</a></li>
               <li class="breadcrumb-item active">İçerik Oluştur</li>
             </ol>
           </div>
@@ -71,7 +71,7 @@ include('menu.php');
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<?php include('data/footer.php');?>
+<?php include('footer.php');?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -81,21 +81,10 @@ include('menu.php');
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- Summernote -->
-<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-<!-- CodeMirror -->
-<script src="../../plugins/codemirror/codemirror.js"></script>
-<script src="../../plugins/codemirror/mode/css/css.js"></script>
-<script src="../../plugins/codemirror/mode/xml/xml.js"></script>
-<script src="../../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+
+
+
+
 <!-- Page specific script -->
 <script>
   /*$('#summernote').summernote({
@@ -115,5 +104,4 @@ include('menu.php');
     });
   })
 </script>
-</body>
-</html>
+

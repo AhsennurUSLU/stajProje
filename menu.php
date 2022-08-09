@@ -68,25 +68,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/register.php" class="nav-link">
+                <a href="register.php" class="nav-link">
                   <i class="fas fa-user-plus nav-icon"></i>
                   <p>Kullanıcı Oluştur</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/users_list.php" class="nav-link">
+                <a href="users_list.php" class="nav-link">
                   <i class="fas fa-users nav-icon"></i>
                   <p>Kullanıcı Listesi</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/create_content.php" class="nav-link">
+                <a href="create_content.php" class="nav-link">
                   <i class="fas fa-file nav-icon"></i>
                   <p>İçerik Oluştur</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/contentlist.php" class="nav-link">
+                <a href="contentlist.php" class="nav-link">
                   <i class="fas fa-list nav-icon"></i>
                   <p>İçerik Listesi</p>
                 </a>

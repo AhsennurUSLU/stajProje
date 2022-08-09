@@ -1,6 +1,6 @@
 <?php 
-include('data/header.php');
-include('data/menu.php');
+include('header.php');
+include('menu.php');
 ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -13,7 +13,7 @@ include('data/menu.php');
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+              <li class="breadcrumb-item"><a href="/index.php">Anasayfa</a></li>
               <li class="breadcrumb-item active">Kullanıcılar</li>
             </ol>
           </div>
@@ -79,7 +79,7 @@ include('data/menu.php');
   </div>
   <!-- /.content-wrapper -->
  
-<?php include('data/footer.php');?> 
+<?php include('footer.php');?> 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -88,16 +88,7 @@ include('data/menu.php');
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- bs-custom-file-input -->
-<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+
 <!-- Page specific script -->
 <script>
 $(function () {
@@ -256,5 +247,3 @@ $(function() {
     });
   });
 </script>
-</body>
-</html>

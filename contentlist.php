@@ -1,13 +1,17 @@
 <?php
-$page="content_list";
+
+
+$page = "content_list";
 include('include/query.php');
-
-
 include('header.php');
 include('menu.php');
 
+/*
+$contentsor = $db->prepare("SELECT * FROM contents WHERE `is_active`=1");
+$contentsor->execute();
 
-
+$content_listesi = $contentsor->fetchALL(PDO::FETCH_ASSOC);
+*/
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -21,7 +25,7 @@ include('menu.php');
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a href="/index.php">Anasayfa</a></li>
                         <li class="breadcrumb-item active">İçerik Listesi</li>
                     </ol>
                 </div>
@@ -145,23 +149,9 @@ include('menu.php');
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<?php include('data/footer.php'); ?>
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- Summernote -->
-<script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-<!-- CodeMirror -->
-<script src="../../plugins/codemirror/codemirror.js"></script>
-<script src="../../plugins/codemirror/mode/css/css.js"></script>
-<script src="../../plugins/codemirror/mode/xml/xml.js"></script>
-<script src="../../plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+
+
 <!-- Page specific script -->
 <script>
     function editorFunc(id){
@@ -180,23 +170,7 @@ include('menu.php');
     });
   })
 </script>
-<!-- DataTables  & Plugins -->
-<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="../../plugins/jszip/jszip.min.js"></script>
-<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
-<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+
 <!-- Page specific script -->
 <script>
     $(function() {
@@ -220,6 +194,4 @@ include('menu.php');
 <!-- Page specific script -->
 
 
-</body>
-
-</html>
+<?php include('footer.php'); ?>
