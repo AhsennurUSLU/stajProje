@@ -28,7 +28,7 @@ if(isset($_POST['login_btn'])){
 	{
 
 		session_destroy();
-		header('Location: admin_login1.php');
+		header('Location: login.php');
 	}
 
 
@@ -132,7 +132,7 @@ else if (isset($_POST['user_sil'])){
 else
 {
 	session_destroy();
-	header('Location: admin_login1.php');
+	header('Location: login.php');
 }
 
 

@@ -21,17 +21,17 @@
             <div class="social">
 
             <button class="icon-btn instagram"> 
-    		<a class="link" href="https://www.instagram.com"  target="_blank">
+    		<a class="link" href="https://www.instagram.com/forfutureblog/"  target="_blank">
     			<i class="fab fa-instagram"></i>
     		</a>
            
                 <button class="icon-btn linkedin"> 
-    		<a class="link" href="https://linkedin.com" target="_blank">
+    		<a class="link" href="https://www.linkedin.com/in/for-future-aa0351248/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
     		</a>
 
             <button class="icon-btn twitter"> 
-    		<a class="link" href="https://twitter.com" target="_blank">
+    		<a class="link" href="https://twitter.com/ForFutureBlog" target="_blank">
     			<i class="fab fa-twitter"></i>
     		</a>
 
